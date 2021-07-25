@@ -53,11 +53,7 @@
       <div class="col-lg-5 col-md-6">
         <h2 class="section-title">Need a larger plan?</h2>
         <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur.</p>
-
-
         <a href="/contact" class="btn btn-primary">Contact Us</a>
-
-
       </div>
     </div>
   </div>

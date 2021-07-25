@@ -1,7 +1,7 @@
 {
   "build": "public",
-  "types": {
-    "posts": "/blog/:filename",
+  "routes": {
+    "posts": "/post/:filename",
     "blog": "/blog/:paginate(totalPages)"
   },
   "local": {

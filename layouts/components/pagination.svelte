@@ -36,7 +36,7 @@
   {/if}
 
   {#each Array(totalPages) as _, i}
-    {#if currentPage == i+1}
+    {#if currentPage === i+1}
       <li class="page-item active">
         <a class="page-link" href="/blog/{i+1}">
           {i+1}

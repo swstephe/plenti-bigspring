@@ -1,6 +1,10 @@
 {
-	"build": "public",
-	"local": {
-		"port": 3000
-	}
+  "build": "public",
+  "types": {
+    "posts": "/blog/:filename",
+    "blog": "/blog/:paginate(totalPages)"
+  },
+  "local": {
+    "port": 3000
+  }
 }

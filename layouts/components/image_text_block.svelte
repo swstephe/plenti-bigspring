@@ -3,13 +3,13 @@
 
   let textPos = 1;
   let textPosMD = 2;
-  let imgPos = 2;
-  let imgPosMD = 1;
+  let imagePos = 2;
+  let imagePosMD = 1;
   if (image.position === "right") {
     textPos = 2;
     textPosMD = 1;
-    imgPos = 1;
-    imgPosMD = 2;
+    imagePos = 1;
+    imagePosMD = 2;
   }
 
   let backgroundClass = "";
@@ -25,12 +25,15 @@
       <div class="col-md-6 order-{textPos} order-md-{textPosMD}">
         <h2 class="section-title">{title}</h2>
         <p>{body}</p>
-        <a href="{link.url}" class="btn-link">{link.title} <i class="ti-arrow-right"></i></a>
+        <a  href="{link.url}" class="btn-link">
+          {link.title}
+          <i class="ti-arrow-right"></i>
+        </a>
       </div>
 
-      <div class="col-md-6 order-{imgPos} order-md-{imgPosMD} mb-4 mb-md-0">
+      <div class="col-md-6 order-{imagePos} order-md-{imagePosMD} mb-4 mb-md-0">
         <div>
-          <img src="/assets{image.url}" alt="{image.alt}" class="img-fluid">
+          <img src="/assets/images/{image.url}" alt="{image.alt}" class="img-fluid">
         </div>
       </div>
 
@@ -39,20 +42,18 @@
 </section>
 
 <style>
-    .btn-link {
-        color: #0aa8a7;
-    }
-    .btn-link {
-        font-weight: 400;
-        text-decoration: none;
-    }
-    .ti-arrow-right {
-        transition: padding-left ease .25s;
-    }
-    .btn-link:hover {
-        color: #1e8685;
-    }
-    .btn-link:hover .ti-arrow-right {
-        padding-left: 5px;
-    }
+  .btn-link {
+    color: #0aa8a7;
+    text-decoration: none;
+  }
+
+  .btn-link i {
+    font-size: 12px;
+    margin-left: 5px;
+    transition: .2s ease;
+  }
+
+  .btn-link:active i, .btn-link:hover i, .btn-link.focus i, .btn-link.active i {
+    margin-left: 10px;
+  }
 </style>

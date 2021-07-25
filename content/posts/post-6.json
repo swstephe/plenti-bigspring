@@ -1,0 +1,10 @@
+{
+  "title": "this is post seis.. desu!",
+  "image": {
+    "src": "post-1.jpg",
+    "alt": "abstract painting one"
+  },
+  "body": "<h5 id='paragraph'>paragraph</h5> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus, facilis placeat pariatur! Voluptatem, sed harum pariatur adipisci voluptates voluptatum cumque, porro sint minima similique magni perferendis fuga!</p>",
+  "author": "claxx moldii",
+  "date": "2021.2.8"
+}

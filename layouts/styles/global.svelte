@@ -5,19 +5,20 @@
         font-weight: 700;
         line-height: 1.2;
     }
+
     :global(h4, .h4) {
         font-size: 20px;
     }
-    :global(body) {
-        color: #777;
-    }
+
     :global(.section) {
         padding-top: 70px;
         padding-bottom: 70px;
     }
+
     :global(.bg-light) {
         background-color: #edf6f5!important;
     }
+
     :global(p, .paragraph) {
         font-weight: 400;
         color: #777;
@@ -25,15 +26,19 @@
         line-height: 1.7;
         font-family: lato,sans-serif;
     }
+
     :global(.btn-primary) {
+    /*background-color: royalblue;*/
         background-color: #0aa8a7;
         color: #fff;
         border-color: #0aa8a7;
     }
+
     :global(.btn-sm) {
         padding: 12px 30px;
         font-size: 15px;
     }
+
     :global(.btn) {
         font-size: 16px;
         font-family: lato,sans-serif;
@@ -42,22 +47,16 @@
         padding: 15px 30px;
         border-radius: 30px;
         border: 0;
+        border-top-color: currentcolor;
+        border-right-color: currentcolor;
+        border-bottom-color: currentcolor;
+        border-left-color: currentcolor;
         position: relative;
         z-index: 1;
         transition: .2s ease;
         white-space: nowrap;
     }
-    :global(.btn-primary:active, .btn-primary:hover, .btn-primary.focus, .btn-primary.active) {
-        background-color: #0aa8a7!important;
-        border-color: #0aa8a7!important;
-    }
-    :global(.shadow, .feature-card:hover, .btn:hover, .btn:active, .btn:focus) {
-        box-shadow: 0 12px 24px -6px rgba(45,67,121,.1)!important;
-    }
-    :global(.btn:hover::before, .btn:active::before, .btn:focus::before) {
-        height: 110%;
-        width: 110%;
-    }
+
     :global(.btn::before) {
         position: absolute;
         content: "";
@@ -72,28 +71,14 @@
         background-color: inherit;
         border: 1px solid transparent;
     }
-    :global(.btn-outline-primary::before) {
-        border-color: #0aa8a7;
-    }
-    :global(.btn-outline-primary) {
-        background-color: initial;
-        color: #222;
-        border-color: transparent;
-    }
+
     :global(.btn:hover::before, .btn:active::before, .btn:focus::before) {
         height: 110%;
         width: 110%;
     }
-    :global(.btn-outline-primary:active, .btn-outline-primary:hover, .btn-outline-primary.focus, .btn-outline-primary.active) {
-        background-color: initial !important;
+
+  :global(.btn-primary:active, .btn-primary:hover, .btn-primary.focus, .btn-primary.active) {
+    background-color: #0aa8a7 !important;
         border-color: #0aa8a7 !important;
-        color: #0aa8a7;
-    }
-    :global(a, a:hover, a:focus) {
-        text-decoration: none;
-    }
-    :global(a, button, select) {
-        cursor: pointer;
-        transition: .2s ease;
     }
 </style>

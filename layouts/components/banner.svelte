@@ -10,5 +10,5 @@
       </div>
     </div>
   </div>
-  <img src="/assets{image.url}" alt="{image.alt}" class="img-fluid w-100">
+   <img src="/assets/images/{image.url}" alt="{image.alt}" class="img-fluid w-100">
 </section>
